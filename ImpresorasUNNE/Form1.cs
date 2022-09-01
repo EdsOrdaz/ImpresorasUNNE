@@ -5,6 +5,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Management;
+using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,7 +16,7 @@ namespace ImpresorasUNNE
     public partial class Form1 : Form
     {
         private String versiontext = "3.0";
-        private String version = "55c82b601deae028c1c5e87fd820923d";
+        private String version = "0c085700dcaa5782eb5599da77b4a3d7d5a92703";
         public static String conexionsqllast = "server=148.223.153.37,5314; database=InfEq;User ID=eordazs;Password=Corpame*2013; integrated security = false ; MultipleActiveResultSets=True";
 
         public static List<String[]> lista_impresoras = new List<String[]>();
@@ -169,5 +171,6 @@ namespace ImpresorasUNNE
             buscar.Visible = true;
             buscar.Focus();
         }
+
     }
 }
